@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home · CNC Sidekick</title>
+<title>Home · CNC Offsider</title>
 <link rel="icon" href="favicon.png">
 <style>
   :root { --bg:#08090B; --surface:#161A1F; --border:#2A313A; --text:#EEF2F6; --dim:#98A2AD; --accent:#2E7DFF; --accent-bright:#5B9CFF; }
@@ -25,13 +25,13 @@
 </head>
 <body>
 <main>
-<header><img src="logo.png" alt=""><a href="./">CNC Sidekick</a></header>
+<header><img src="logo.png" alt=""><a href="./">CNC Offsider</a></header>
 <nav><a href="privacy.html">Privacy &amp; terms</a><a href="support.html">Support</a><a href="delete-account.html">Delete your account</a></nav>
-<h1>CNC Sidekick</h1>
+<h1>CNC Offsider</h1>
 <p class="dim">Checks your G-code against your own bits, materials and machine before you cut.</p>
 <section class="card" id="link-status" hidden><h2 id="link-title"></h2><p id="link-body"></p></section>
 <section class="card" id="link-generic"><h2>Opened an email link on a computer?</h2>
-<p>Sign-up confirmation and password-reset links finish inside the app. Open the email on the phone or tablet where CNC Sidekick is installed and tap the link there.</p></section>
+<p>Sign-up confirmation and password-reset links finish inside the app. Open the email on the phone or tablet where CNC Offsider is installed and tap the link there.</p></section>
 <section class="card"><h2>Need help?</h2><p>See <a href="support.html">Support</a>.</p></section>
 <script>
 // This page is the Supabase Site URL: an email link that can't return to
@@ -52,10 +52,10 @@
     body = error.replace(/\+/g, ' ') + '. Links expire after a while and only work once. Request a new one from the sign-in screen in the app.';
   } else if (type === 'recovery') {
     title = 'Finish resetting your password in the app';
-    body = 'Password reset links can only be completed inside CNC Sidekick. Open this email on your phone and tap the link there, or tap "Forgot password?" in the app to send a new one.';
+    body = 'Password reset links can only be completed inside CNC Offsider. Open this email on your phone and tap the link there, or tap "Forgot password?" in the app to send a new one.';
   } else if (p.get('access_token') || type === 'signup' || type === 'email_change') {
     title = 'Your email is confirmed';
-    body = 'You can close this page. Open CNC Sidekick and sign in with your email and password.';
+    body = 'You can close this page. Open CNC Offsider and sign in with your email and password.';
   } else {
     return;
   }
@@ -66,7 +66,7 @@
   document.getElementById('link-generic').hidden = true;
 })();
 </script>
-<footer>© 2026 CNC Sidekick</footer>
+<footer>© 2026 CNC Offsider</footer>
 </main>
 </body>
 </html>
